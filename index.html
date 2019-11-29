@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Patterns!</title>
+  </head>
+  <body>
+    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="Gradient1">
+          <stop offset="5%" stop-color="white" />
+          <stop offset="95%" stop-color="green" />
+        </linearGradient>
+        <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="10%" stop-color="red" />
+          <stop offset="80%" stop-color="orange" />
+        </linearGradient>
+        <linearGradient id="Gradient3" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="5%" stop-color="pink" />
+          <stop offset="95%" stop-color="green" />
+        </linearGradient>
+        <linearGradient id="Gradient4" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="40%" stop-color="silver" />
+          <stop offset="25%" stop-color="blue" />
+        </linearGradient>
+
+        <pattern id="Pattern" x="0" y="0" width=".25" height=".25">
+          <ellipse
+            cx="5"
+            cy="45"
+            r="20"
+            rx="50"
+            ry="10"
+            fill="url(#Gradient4)"
+            fill-opacity="0.3"
+          ></ellipse>
+          <circle
+            cx="50"
+            cy="50"
+            r="20"
+            fill="url(#Gradient1)"
+            fill-opacity="0.5"
+          />
+          <circle
+            cx="15"
+            cy="15"
+            r="10"
+            fill="url(#Gradient2)"
+            fill-opacity="0.5"
+          />
+          <circle
+            cx="75"
+            cy="55"
+            r="60"
+            fill="url(#Gradient3)"
+            fill-opacity="0.5"
+          />
+        </pattern>
+      </defs>
+
+      <rect fill="url(#Pattern)" stroke="black" width="200" height="200" />
+    </svg>
+  </body>
+</html>
